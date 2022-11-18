@@ -1,0 +1,27 @@
+{
+  "pages": [
+    {
+      "id": "Wide table",
+      "isDefault": true
+    },
+    {
+      "id": "Narrow table",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#F5D1D1",
+  "icon": "flag",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}
