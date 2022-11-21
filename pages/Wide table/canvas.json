@@ -2397,6 +2397,9 @@
                 },
                 {
                   "key": "menuItems.menuItem2.onClick"
+                },
+                {
+                  "key": "menuItems.menuItemewwq3tkfzy.onClick"
                 }
               ],
               "leftColumn": 0,
@@ -2432,6 +2435,15 @@
                   "isDisabled": false,
                   "index": 1,
                   "onClick": "{{navigateTo('Narrow table', {}, 'SAME_WINDOW')}}"
+                },
+                "menuItemewwq3tkfzy": {
+                  "id": "menuItemewwq3tkfzy",
+                  "index": 2,
+                  "label": "Inline editable table",
+                  "widgetId": "2j9xp740z9",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "onClick": "{{navigateTo('Inline editable table', {}, 'SAME_WINDOW')}}"
                 }
               },
               "isVisible": true,

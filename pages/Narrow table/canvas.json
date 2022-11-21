@@ -1585,6 +1585,9 @@
                 },
                 {
                   "key": "menuItems.menuItem2.onClick"
+                },
+                {
+                  "key": "menuItems.menuItems15t82v2u1.onClick"
                 }
               ],
               "leftColumn": 0,
@@ -1620,6 +1623,15 @@
                   "isDisabled": false,
                   "index": 1,
                   "onClick": "{{navigateTo('Narrow table', {}, 'SAME_WINDOW')}}"
+                },
+                "menuItems15t82v2u1": {
+                  "id": "menuItems15t82v2u1",
+                  "index": 2,
+                  "label": "Inline editable table",
+                  "widgetId": "flf4zmyyxs",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "onClick": "{{navigateTo('Inline editable table', {}, 'SAME_WINDOW')}}"
                 }
               },
               "isVisible": true,

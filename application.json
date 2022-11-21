@@ -7,6 +7,10 @@
     {
       "id": "Narrow table",
       "isDefault": false
+    },
+    {
+      "id": "Inline editable table",
+      "isDefault": false
     }
   ],
   "viewMode": false,
