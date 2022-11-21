@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1050,
+          "bottomRow": 1110,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -58,7 +58,7 @@
                       "dataType": "number",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.SCHEMA_ID))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Number Input",
-                      "sourceData": 1095,
+                      "sourceData": 1427,
                       "isCustomField": false,
                       "accessor": "SCHEMA_ID",
                       "identifier": "SCHEMA_ID",
@@ -80,7 +80,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.SCHEMA_NAME))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "PM_BEIHAI_MILL_REPORTING",
+                      "sourceData": "FOREST_SAS_DW",
                       "isCustomField": false,
                       "accessor": "SCHEMA_NAME",
                       "identifier": "SCHEMA_NAME",
@@ -341,8 +341,8 @@
                   "fieldType": "Object",
                   "sourceData": {
                     "ACCOUNT_ORIGIN": "GL",
-                    "SCHEMA_ID": 1095,
-                    "SCHEMA_NAME": "PM_BEIHAI_MILL_REPORTING",
+                    "SCHEMA_ID": 1427,
+                    "SCHEMA_NAME": "FOREST_SAS_DW",
                     "CATALOG_ID": 167,
                     "CATALOG_NAME": "DEV_BUSINESS_SOURCES",
                     "SCHEMA_OWNER": "DATAOPS_DEVELOPER",
@@ -399,8 +399,8 @@
               "displayName": "JSON Form",
               "iconSVG": "/static/media/icon.6bacf7df.svg",
               "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-              "topRow": 0,
-              "bottomRow": 89,
+              "topRow": 4,
+              "bottomRow": 93,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
               "title": "Update Row for schema: {{data_table.selectedRow.SCHEMA_NAME}}",
@@ -679,8 +679,8 @@
                   "key": "borderRadius"
                 }
               ],
-              "topRow": 0,
-              "bottomRow": 89,
+              "topRow": 4,
+              "bottomRow": 93,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "parentColumnSpace": 19.75,
@@ -2335,8 +2335,8 @@
               "searchTags": [
                 "dropdown"
               ],
-              "topRow": 90,
-              "bottomRow": 97,
+              "topRow": 96,
+              "bottomRow": 103,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
@@ -2377,6 +2377,72 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+            },
+            {
+              "isCompact": false,
+              "boxShadow": "none",
+              "widgetName": "MenuButton1",
+              "displayName": "Menu Button",
+              "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
+              "topRow": 0,
+              "bottomRow": 4,
+              "parentRowSpace": 10,
+              "type": "MENU_BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.328125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "menuItems.menuItem1.onClick"
+                },
+                {
+                  "key": "menuItems.menuItem2.onClick"
+                }
+              ],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "menuColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "isDisabled": false,
+              "key": "5zbarop2d4",
+              "isDeprecated": false,
+              "rightColumn": 5,
+              "menuVariant": "PRIMARY",
+              "widgetId": "d1qvqrsdi3",
+              "menuItems": {
+                "menuItem1": {
+                  "label": "Wide table",
+                  "id": "menuItem1",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 0,
+                  "onClick": "{{navigateTo('Wide table',{} + '/', 'SAME_WINDOW')}}"
+                },
+                "menuItem2": {
+                  "label": "Narrow table",
+                  "id": "menuItem2",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 1,
+                  "onClick": "{{navigateTo('Narrow table', {}, 'SAME_WINDOW')}}"
+                }
+              },
+              "isVisible": true,
+              "label": "Menu\n",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+              "placement": "CENTER"
             }
           ]
         },
@@ -2431,7 +2497,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": false
+    "isHidden": true
   },
   "deleted": false,
   "gitSyncId": "6374cca7c4406624f7ca6a26_6374cca7c4406624f7ca6a28"
